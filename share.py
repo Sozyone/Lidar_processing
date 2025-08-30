@@ -74,8 +74,8 @@ def save_histogram(points: np.ndarray, g: float, tag: str, out_dir: str = "plots
 
 #%% ==== TASK 1 ====
 # Load both datasets
-pcd1 = np.load(r"e:\Documents\LNU\Summer 1\IT Lulea\Ass 5\dataset1.npy")
-pcd2 = np.load(r"e:\Documents\LNU\Summer 1\IT Lulea\Ass 5\dataset2.npy")
+pcd1 = np.load(r"e:\Documents\LNU\Summer 1\IT Lulea\Ass 5\Lidar_processing\dataset1.npy")
+pcd2 = np.load(r"e:\Documents\LNU\Summer 1\IT Lulea\Ass 5\Lidar_processing\dataset2.npy")
 
 # Compute ground levels
 g1 = get_ground_level(pcd1)
