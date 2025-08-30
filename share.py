@@ -62,7 +62,7 @@ def save_histogram(points: np.ndarray, g: float, tag: str, out_dir: str = "plots
     z = points[:, -1].astype(float)
     plt.figure(figsize=(7,4))
     plt.hist(z, bins=256)
-    plt.axvline(g, linestyle="--", linewidth=2)
+    plt.axvline(g, color="red", linestyle="--", linewidth=2)
     plt.title(f"{tag}: height histogram\nEstimated ground level = {g:.3f}")
     plt.xlabel("Height (z)")
     plt.ylabel("Count")
